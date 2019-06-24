@@ -6,12 +6,12 @@ if __name__ == "__main__":
 
 
     # Get Request Template
-    response = request.get(
+    response = requests.get(
         uri,
         data={},
         headers={}
     )
-    
+
     status_code = response.status_code
     body = response.json()
 
